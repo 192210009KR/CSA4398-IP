@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Website</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/
+    css2?family=poppins:wght@300@display=swap" rel="stylesheet">
+    <link rel="stylesheet"type="text/css"href="style.css">
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: orange;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2rem;
+}
+.discounts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.discount-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: calc(25% - 30px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.discount-card h2 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.discount-card p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+.discount-card button {
+    background: #e74c3c;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.discount-card button:hover {
+    background: #c0392b;
+}
+.discount-card:hover {
+    transform: translateY(-5px);
+}
+footer {
+    background: orange;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+</style>
+<body>
+    <header>
+        <h1>Special Discounts</h1>
+        <p>Grab your favorite items at unbeatable prices!</p>
+    </header>
+    <section class="discounts-container">
+        <div class="discount-card">
+            <h2>20% Off on Air <br>Emirites</h2>
+            <p>Get the best shoes at half price.</p>
+            <button>Book Now</button>
+        </div>
+        <div class="discount-card">
+            <h2>30% Off on Air Hotels</h2>
+            <p>Save big on electronics. Limited time offer!</p>
+            <button>Book Now</button>
+        </div>
+        <div class="discount-card">
+            <h2>10% off on Airlounge</h2>
+            <p>On all fashion items. Don’t miss out!</p>
+            <button>Book Now</button>
+        </div>
+        <div class="discount-card">
+            <h2>100% cashback on first booking</h2>
+            <p>Use reffel code to get price</p>
+            <button>claim now</button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 YourStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>

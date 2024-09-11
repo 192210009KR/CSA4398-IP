@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints - Travel Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        color: black;
+        background-color: #f7f9fc;
+        line-height: 1.6;
+    }
+    
+    header {
+        background-color: orange;
+        padding: 20px 0;
+        color: white;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    nav a {
+        margin-left: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    section.complaints {
+        padding: 40px 20px;
+        background-color: white;
+        border-top: 1px solid #ddd;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: black;
+    }
+    
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        color: black;
+    }
+    
+    p {
+        margin-bottom: 15px;
+        color: black ;
+    }
+    
+    .complaint-form {
+        margin-top: 20px;
+    }
+    
+    .complaint-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .complaint-form input, .complaint-form textarea {
+        width: 100%;
+        background-color: transparent;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .complaint-form button {
+        padding: 10px 20px;
+        background-color: grey;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .complaint-form button:hover {
+        background-color: green;
+    }
+    
+    footer {
+        background-color: orange;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    footer nav a {
+        margin-left: 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    
+    footer nav a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EXPLORE EASE</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="complaints.html">Complaints</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="complaints">
+        <div class="container">
+            <h2>Complaints</h2>
+            <p>We are committed to providing excellent service, but if you have any issues or concerns, we are here to help. Please fill out the form below to file a complaint, and we will address it as soon as possible.</p>
+
+            <div class="complaint-form">
+                <h3>Complaint Form</h3>
+                <form action="submit_complaint.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="complaint">Complaint Details:</label>
+                    <textarea id="complaint" name="complaint" rows="5" required></textarea>
+
+                    <button type="submit">Submit Complaint</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+            <nav>
+                <a href="privacy policy.html">Privacy Policy</a>
+                <a href="Terms and conditions.html">Terms & Conditions</a>
+                <a href="Contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

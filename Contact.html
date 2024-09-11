@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Website</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/
+    css2?family=poppins:wght@300@display=swap" rel="stylesheet">
+    <link rel="stylesheet"type="text/css"href="style.css">
+</head>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    padding: 40px 0;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact-info, .contact-form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.contact-info h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.contact-form h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+button {
+    background-color: darkgray;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.footer {
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        margin: 0;
+    }
+}
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Fill out the form below or reach us at our office.</p>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Email:</strong> travelwebsite@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9581805347</p>
+                <p><strong>Address:</strong> kukatpally pillor no: 10,opposite HYDERABAD</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 YourStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

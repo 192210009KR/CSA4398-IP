@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Website</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/
+    css2?family=poppins:wght@300@display=swap" rel="stylesheet">
+    <link rel="stylesheet"type="text/css"href="style.css">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f4f6;
+        background: url(v.jpg) no-repeat center;
+    }
+    
+    .signup-container {
+        background-color: transparent#ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    .signup-container h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        color: black;
+    }
+    
+    .signup-form .form-group {
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
+    
+    .signup-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .signup-form input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #333;
+    }
+    
+    .signup-form input:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: grey;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: green;
+    }
+    
+    .signup-container p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: white;
+    }
+    
+    .signup-container a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .signup-container a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form action="#" method="POST" class="signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password"> Create Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>

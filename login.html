@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Website</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/
+    css2?family=poppins:wght@300@display=swap" rel="stylesheet">
+    <link rel="stylesheet"type="text/css"href="style.css">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(v.jpg) no-repeat center fixed;
+        background-color: #f3f4f6;
+    }
+    div{
+        color:white;
+    }
+    .login-container {
+        background-color: transparent;
+        background: url(gr.jpg) no-repeat center fixed;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    .login-container h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        color: black;
+    }
+    
+    .login-form .form-group {
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
+    
+    .login-form label {
+        display: block;
+        color:white;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .login-form input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: grey;
+    }
+    
+    .login-form input:focus {
+        border-color: #007;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: grey;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: green;
+    }
+    
+    .login-container p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: white;
+    }
+    
+    .login-container a {
+        color: blue;
+        text-decoration: none;
+    }
+    
+    .login-container a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn" onclick="window.location.href='explore ease.html'">Login</button>
+        </form>
+        <p>Don’t have an account? <a href="sign up.html">Sign up here</a></p>
+    </div>
+</body>
+</html>

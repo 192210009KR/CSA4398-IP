@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f7f9fc;
+        color: #333;
+    }
+    header {
+        background-color: orange;
+        padding: 20px 0;
+        color: #fff;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .bookings {
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: #007BFF;
+    }
+    .booking-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .booking-card.past {
+        opacity: 0.7;
+    }
+    .booking-info h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        color: orange;
+    }
+    .booking-info p {
+        margin-bottom: 5px;
+    }
+    .booking-actions button {
+        background-color: grey;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    .booking-actions button:hover {
+        background-color: green;
+    }
+    @media (max-width: 768px) {
+        .booking-card {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .booking-actions {
+            margin-top: 10px;
+        }
+    
+        .booking-actions button {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+    footer {
+    background-color: orange;
+    color: white;
+    padding: 20px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Bookings</h1>
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="Places.html">Places</a>
+                <a href="Home.html">My Account</a>
+                <a href="Home.html">Support</a>
+                <a href="login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="bookings">
+        <div class="container">
+            <h2>Upcoming Bookings</h2>
+            <div class="booking-card">
+                <div class="booking-info">
+                    <h3>Trip to Singapore</h3>
+                    <p>Check-in: 15th September 2024</p>
+                    <p>Check-out: 22nd September 2024</p>
+                </div>
+                <div class="booking-actions">
+                    <button>View Details</button>
+                    <button>Book Ticket</button>
+                </div>
+            </div>
+            <div class="booking-card">
+                <div class="booking-info">
+                    <h3>Business Meeting in Australia</h3>
+                    <p>Check-in: 1st October 2024</p>
+                    <p>Check-out: 5th October 2024</p>
+                </div>
+                <div class="booking-actions">
+                    <button>View Details</button>
+                    <button>Book Ticket</button>
+                </div>
+            </div>
+
+            <h2>Past Bookings</h2>
+            <div class="booking-card past">
+                <div class="booking-info">
+                    <h3>Holiday Trip to Switzerland</h3>
+                    <p>Check-in: 10th July 2023</p>
+                    <p>Check-out: 17th August2023</p>
+                </div>
+                <div class="booking-actions">
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="booking-card past">
+                <div class="booking-info">
+                    <h3>Tirp to Malaysia</h3>
+                    <p>Check-in: 20th August 2023</p>
+                    <p>Check-out: 23rd Oct 2023</p>
+                </div>
+                <div class="booking-actions">
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+            <nav>
+                <a href="privacy policy.html">Privacy Policy</a>
+                <a href="Terms and conditions.html">Terms of Service</a>
+                <a href="Contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
